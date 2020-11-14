@@ -13,7 +13,8 @@ This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) 
 ## Steps
 1. Clone the repository ```git clone https://github.com/rafaginard/seq_nms_yolo.git```;
 1. Go to the directory ```cd seq_nms_yolo```;
-1. Create a Conda Enviroment with python 2.7 version and use the requirements.txt from the repository. ```conda create --name <env> python=2.7 --file requirements.txt```
+1. Create a Conda Enviroment with python 2.7 version and use the requirements.txt from the repository. ```conda create --name TestEnv python=2.7 --file packageslist.txt```
+1. Activate enviroment ```source activate TestEnv```;
 1. `make` the project;
 1. Download yolo.weights and tiny-yolo.weights by running `wget https://pjreddie.com/media/files/yolo.weights` and `wget https://pjreddie.com/media/files/yolov2-tiny.weights`;
 1. Export the paths:
