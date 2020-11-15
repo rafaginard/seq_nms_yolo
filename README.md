@@ -5,7 +5,7 @@
 ---
 
 ## Introduction
-This was run in Ubuntu 18.04.4 LTS
+This was run in Ubuntu 18.04.4 LTS has been tested with CUDA v10.1 if you need any other version you must modify the Makefile and recompile.
 ![](img/index.jpg) 
 
 This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) and **seq-nms**([reference](https://arxiv.org/abs/1602.08465)) to realise **real time video detection**.
@@ -15,6 +15,10 @@ This project combines **YOLOv2**([reference](https://arxiv.org/abs/1506.02640)) 
 1. Go to the directory ```cd seq_nms_yolo```;
 1. Create a Conda Enviroment with python 2.7 version and use the requirements.txt from the repository. ```conda create --name TestEnv python=2.7 --file packageslist.txt```
 1. Activate enviroment ```source activate TestEnv```;
+1. Modify the Makefile acording to you environment. By default settings:
+   * GPU=1		   # 0 if your pc doesn't support CUDA
+   * CUDNN=0		# 1 if your pc does support CUDNN
+   * OPENCV=0	   # 2 if your pc does support OPENCV
 1. `make` the project;
 1. Download yolo.weights and tiny-yolo.weights by running `wget https://pjreddie.com/media/files/yolo.weights` and `wget https://pjreddie.com/media/files/yolov2-tiny.weights`;
 1. Export the paths:
